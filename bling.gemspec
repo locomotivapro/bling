@@ -6,7 +6,7 @@ require 'bling/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'bling'
+  s.name        = 'bling-ruby-api'
   s.version     = Bling::VERSION
   s.summary     = 'Gem to access Bling API in ruby'
   s.description = 'Gem to access Bling API in ruby'
