@@ -15,7 +15,7 @@ module Bling
     #
     # @param [:xml, :json, 'xml', 'json']
     def response_format=(response_format)
-      @response_format = @response_format.to_sym
+      @response_format = response_format.to_sym
     end
 
     # The base API url
