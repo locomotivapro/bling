@@ -156,17 +156,18 @@ module Bling
       end
 
       def build_installment_missing_nodes(installments)
-        installments.each do |installment|
-          installments_xml_nodes.each { |node| installment[node] = nil unless installment.has_key?(node) }
-        end
-        installments
+        build_missing_nodes(:installments_xml_nodes, installments)
       end
 
       def build_item_missing_nodes(items)
-        items.each do |item|
-          item_xml_nodes.each { |node| item[node] = nil unless item.has_key?(node) }
+        build_missing_nodes(:item_xml_nodes, items)
+      end
+
+      def build_missing_nodes(node_array, records)
+        records.each do |record|
+          send(node_array).each { |node| record[node] = nil unless record.has_key?(node) }
         end
-        items
+        records
       end
 
       def installments_xml_nodes
