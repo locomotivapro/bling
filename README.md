@@ -6,6 +6,9 @@ Interface ruby para comunicação com a API do [Bling ERP](https://www.bling.com
 
 [![Code Climate](https://codeclimate.com/github/locomotivapro/bling/badges/gpa.svg)](https://codeclimate.com/github/locomotivapro/bling)
 [![Test Coverage](https://codeclimate.com/github/locomotivapro/bling/badges/coverage.svg)](https://codeclimate.com/github/locomotivapro/bling/coverage)
+[![Build Status](https://semaphoreci.com/api/v1/locomotiva/bling/branches/master/badge.svg)](https://semaphoreci.com/locomotiva/bling)
+
+Documentação Rdoc em [Rubydoc.info](http://www.rubydoc.info/gems/bling-ruby-api/)
 
 ## Configuração
 
