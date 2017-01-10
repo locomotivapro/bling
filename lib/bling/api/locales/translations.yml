@@ -1,0 +1,71 @@
+produtos: products
+produto: product
+contato: user
+contatos: users
+pedido: order
+pedidos: orders
+
+resultado: result
+retorno: return
+erros: errors
+
+codigo: code
+descricao: description
+descricao_complementar: additional_description
+un: unit
+vlr_unit: price
+preco_custo: cost_price
+peso_bruto: raw_weight
+peso_liq: weight
+class_fiscal: tax_category
+origem: origin
+estoque: quantity
+gtin: gtin
+gtin_embalagem: gtin_package
+largura: width
+altura: height
+profundidade: depth
+estoque_minimo: min_quantity
+estoque_maximo: max_quantity
+
+nome: name
+fantasia: company_name
+tipo_pessoa: tax_type
+cpf_cnpj: document
+ie_rg: ie_rg
+endereco: address
+numero: number
+complemento: additional_address
+bairro: neighborhood
+cep: zipcode
+cidade: city
+uf: state
+fone: phone
+email: email
+
+celular: cellphone
+transportadora: carrier
+tipo_frete: :shipment_type
+servico_correios: correios_service
+
+numero_loja: ecommerce_order_number
+loja: store
+nat_operacao: selling_category
+contribuinte: tax_classification
+situacao: status
+
+nome_etiqueta_envio: shipment_label_name
+endereco_etiqueta_envio: shipment_label_address
+numero_etiqueta_envio: shipment_label_number
+complemento_etiqueta_envio: shipment_label_additional_address
+municipio_etiqueta_envio: shipment_label_city
+estado_etiqueta_envio: shipment_label_state
+cep_etiqueta_envio: shipment_label_zipcode
+bairro_etiqueta_envio: shipment_label_neighborhood
+qtde: item_quantity
+data: date
+vlr: amount
+obs: additional_info
+vlr_frete: shipment_amount
+vlr_desconto: discount_amount
+obs_internas: private_additional_info

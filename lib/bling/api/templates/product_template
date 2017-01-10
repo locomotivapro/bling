@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produto>
+  <codigo>%{code}</codigo>
+  <descricao>%{description}</descricao>
+  <descricaoComplementar>%{additional_description}</descricaoComplementar>
+  <un>%{unit}</un>
+  <vlr_unit>%{price}</vlr_unit>
+  <preco_custo>%{cost_price}</preco_custo>
+  <peso_bruto>%{raw_weight}</peso_bruto>
+  <peso_liq>%{weight}</peso_liq>
+  <class_fiscal>%{tax_category}</class_fiscal>
+  <origem>%{origin}</origem>
+  <estoque>%{quantity}</estoque>
+  <gtin>%{gtin}</gtin>
+  <gtinEmbalagem>%{gtin_package}</gtinEmbalagem>
+  <largura>%{width}</largura>
+  <altura>%{height}</altura>
+  <profundidade>%{depth}</profundidade>
+  <estoqueMinimo>%{min_quantity}</estoqueMinimo>
+  <estoqueMaximo>%{max_quantity}</estoqueMaximo>
+  <cest>%{cest}</cest>
+</produto>

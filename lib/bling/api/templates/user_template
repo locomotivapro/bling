@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contato>
+  <nome>%{:name}</nome>
+  <fantasia>%{:company_name}</fantasia>
+  <tipoPessoa>%{:tax_type}</tipoPessoa>
+  <cpf_cnpj>%{:document}</cpf_cnpj>
+  <ie_rg>%{:ie_rg}</ie_rg>
+  <endereco>%{:address}</endereco>
+  <numero>%{:number}</numero>
+  <complemento>%{:additional_address}</complemento>
+  <bairro>%{:neighborhood}</bairro>
+  <cep>%{:zipcode}</cep>
+  <cidade>%{:city}</cidade>
+  <uf>%{:state}</uf>
+  <fone>%{:phone}</fone>
+  <email>%{:email}</email>
+</contato>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+  <data>%{date}</data>
+  <numero>%{order_number}</numero>
+  <numero_loja>%{ecommerce_order_number}</numero_loja>
+  <loja>%{store}</loja>
+  <nat_operacao>%{selling_category}</nat_operacao>
+  <cliente>
+    <nome>%{name}</nome>
+    <tipoPessoa>%{tax_type}</tipoPessoa>
+    <endereco>%{address}</endereco>
+    <cpf_cnpj>%{document}</cpf_cnpj>
+    <ie_rg>%{ie_rg}</ie_rg>
+    <contribuinte>%{tax_classification}</contribuinte>
+    <numero>%{number}</numero>
+    <complemento>%{additional_address}</complemento>
+    <bairro>%{neighborhood}</bairro>
+    <cep>%{zipcode}</cep>
+    <cidade>%{city}</cidade>
+    <uf>%{state}</uf>
+    <fone>%{phone}</fone>
+    <celular>%{cellphone}</celular>
+    <email>%{email}</email>
+  </cliente>
+  <transporte>
+    <transportadora>%{carrier}</transportadora>
+    <tipo_frete>%{shipment_type}</tipo_frete>
+    <servico_correios>%{correios_service}</servico_correios>
+    <dados_etiqueta>
+      <nome>%{shipment_label_name}</nome>
+      <endereco>%{shipment_label_address}</endereco>
+      <numero>%{shipment_label_number}</numero>
+      <complemento>%{shipment_label_additional_address}</complemento>
+      <municipio>%{shipment_label_city}</municipio>
+      <uf>%{shipment_label_state}</uf>
+      <cep>%{shipment_label_zipcode}</cep>
+      <bairro>%{shipment_label_neighborhood}</bairro>
+    </dados_etiqueta>
+  </transporte>
+  <itens>%{items}</itens>
+  <parcelas>%{installments}</parcelas>
+  <vlr_frete>%{shipment_amount}</vlr_frete>
+  <vlr_desconto>%{discount_amount}</vlr_desconto>
+  <obs>%{additional_info}</obs>
+  <obs_internas>%{private_additional_info}</obs_internas>
+</pedido>

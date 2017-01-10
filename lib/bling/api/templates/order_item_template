@@ -1,0 +1,8 @@
+<item>
+  <codigo>%{code}</codigo>
+  <descricao>%{description}</descricao>
+  <un>%{unit}</un>
+  <qtde>%{item_quantity}</qtde>
+  <vlr_unit>%{price}</vlr_unit>
+</item>
+
