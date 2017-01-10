@@ -1,6 +1,8 @@
 # Ruby Bling API
 
-Essa gem consiste em uma interface ruby para comunicação com a API do [Bling ERP](https://www.bling.com.br).
+Interface ruby para comunicação com a API do [Bling ERP](https://www.bling.com.br).
+
+## Atenção, gem em desenvolvimento, nem todas as chamadas esto disponíveis ainda.
 
 [![Code Climate](https://codeclimate.com/github/locomotivapro/bling/badges/gpa.svg)](https://codeclimate.com/github/locomotivapro/bling)
 [![Test Coverage](https://codeclimate.com/github/locomotivapro/bling/badges/coverage.svg)](https://codeclimate.com/github/locomotivapro/bling/coverage)
@@ -35,16 +37,36 @@ utilizando a class Bling::API ex:
 users = Bling::API.users.list
 ```
 
+Toda chamada retorna um objeto da class Bling::API::Response ((métodos disponíveis)[http://www.rubydoc.info/gems/bling-ruby-api/Bling/API/Response]). Um método importante de instâncias desta classe é o método records, em caso de sucesso da consulta, este método retornará uma array contendo os registros obtidos:
+
+```ruby
+ user_request = Bling::API.user.get('36434...')
+user_request.records # [Record]
+```
+
+Cada item retornado em uma chamada é inserido em um objeto da classe Bling::API::Record, responsável por criar readers para cada um dos valores retornados, ex:
+
+```ruby
+user_request = Bling::API.user.get('36434...')
+user = user_request.records.first
+
+# Ao invés de consultar como um Hash (ex: user['name']) é possível fazer:
+
+user.name # => 'Denis'
+```
+
+## Chamadas disponíveis
+
 *Cliente*
 
-Listagem de todos clientes inseridos no Bling:
+- Listagem de todos clientes inseridos no Bling:
 
 ```ruby
 user_client = Bling::API.users
 users = user_client.list
 ```
 
-Inserir um cliente no Bling:
+- Inserir um cliente no Bling:
 
 ```ruby
 user = Bling::API.user.create(
@@ -65,4 +87,10 @@ user = Bling::API.user.create(
   }
 )
 
+```
+
+- Obter dados de um cliente
+
+```ruby
+user = Bling::API.user.get(user_id) # user_id: cpf ou cnpj
 ```
