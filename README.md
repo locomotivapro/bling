@@ -37,7 +37,7 @@ utilizando a class Bling::API ex:
 users = Bling::API.users.list
 ```
 
-Toda chamada retorna um objeto da class Bling::API::Response ((métodos disponíveis)[http://www.rubydoc.info/gems/bling-ruby-api/Bling/API/Response]). Um método importante de instâncias desta classe é o método records, em caso de sucesso da consulta, este método retornará uma array contendo os registros obtidos:
+Toda chamada retorna um objeto da class Bling::API::Response ([métodos disponíveis](http://www.rubydoc.info/gems/bling-ruby-api/Bling/API/Response)). Um método importante de instâncias desta classe é o método records, em caso de sucesso da consulta, este método retornará uma array contendo os registros obtidos:
 
 ```ruby
  user_request = Bling::API.user.get('36434...')
