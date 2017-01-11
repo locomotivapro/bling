@@ -250,3 +250,7 @@ product = order_client.records.first
 
 Bling::API.order.put('123', 3)
 ```
+
+## Desenvolvimento
+
+Desenvolvido e mantido por [Locomotiva.pro](http://locomotiva.pro), copyright (c) 2013-2016.
