@@ -1,0 +1,6 @@
+<parcela>
+  <dias>%{days}</dias>
+  <data>%{date}</data>
+  <vlr>%{amount}</vlr>
+  <obs>%{additional_info}</obs>
+</parcela>

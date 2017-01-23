@@ -22,5 +22,9 @@ module Bling
       Order.new
     end
 
+    def invoice
+      Invoice.new
+    end
+
   end
 end

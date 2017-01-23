@@ -251,6 +251,84 @@ product = order_client.records.first
 Bling::API.order.put('123', 3)
 ```
 
+
+*Nota Fiscal*
+
+- Listar notas
+```ruby
+invoice_request = Bling::API.invoice.list
+invoices = invoice_request.records if invoice_request.success?
+```
+
+- Inserir uma nota fiscal
+```ruby
+ invoice = Bling::API.invoice.create(
+   {
+   invoice_type: 'E',
+   ecommerce_order_number: '123',
+   operation_type: 'Venda de Mercadorias',
+   user: {
+    name: 'Jonh Doe',
+    tax_type: 1,
+    document: '35165478662',
+    ie_rg: '306153420',
+    icms_participant: 1,
+    tax_classification: 1,
+    address: 'My great street',
+    number: '33',
+    additional_address: 'apt 12',
+    zipcode: '03454020',
+    city: 'sao paulo',
+    uf: 'SP',
+    phone: '(11) 2233-3322',
+    country: 'Brazil',
+    email: 'jonh@@doe.com'
+   },
+   shipment: {
+     carrier: 'Correios',
+     document: '60120930390001',
+     ie_rg: '306153420',
+     full_address: 'My street, 33, apt 2',
+     zipcode: '03454020',
+     city: 'sao paulo',
+     uf: 'SP',
+     vehicle_place: 'DMZ-0112',
+     vehicle_state: 'SP',
+     shipment_type: 'D',
+     shipments_size: '',
+     shipments_kind: '',
+     number: '12342',
+     raw_weight: 20,
+     weight: 18,
+     correios_service: 'Sedex',
+     shipment_label: {}
+   },
+   items: [
+     { code: '001', description: 'lorem', unit: 'pc', item_quantity: 3, price: 12.30, origin: '0', tax_category: '1000.00.10'  },
+     { code: '002', description: 'lorem', unit: 'pc', item_quantity: 4, price: 32.30, origin: '0', tax_category: '1000.00.10' },
+   ],
+   installments: [
+     { days: '10', date: '28/06/2016', amount: 140.00, additional_info: '' },
+     { days: '15', date: '28/07/2016', amount: 140.00, additional_info: '' },
+   ],
+   rural_reference_invoice: {
+     number: '001230',
+     sequence: '0',
+     month_year_issue_date: '1202'
+   },
+   shipment_amount: 10.0,
+   discount_amount: 0.0,
+   expenses_amount: 2.5,
+   additional_info: '',
+   }
+ )
+```
+
+## To-Do
+
+- Testes
+- Filtros para chamadas da API
+
 ## Desenvolvimento
 
 Desenvolvido e mantido por [Locomotiva.pro](http://locomotiva.pro), copyright (c) 2013-2016.

@@ -11,6 +11,7 @@ require 'bling/api/record'
 require 'bling/api/product'
 require 'bling/api/user'
 require 'bling/api/order'
+require 'bling/api/invoice'
 
 
 require 'bling/railtie' if defined?(::Rails) && ::Rails::VERSION::MAJOR >= 3

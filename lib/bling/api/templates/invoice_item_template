@@ -1,0 +1,12 @@
+<item>
+    <codigo>%{code}</codigo>
+    <descricao>%{description}</descricao>
+    <un>%{unit}</un>
+    <qtde>%{item_quantity}</qtde>
+    <vlr_unit>%{price}</vlr_unit>
+    <tipo>%{type}</tipo>
+    <peso_bruto>%{raw_weight}</peso_bruto>
+    <peso_liq>%{weight}</peso_liq>
+    <class_fiscal>%{tax_category}</class_fiscal>
+    <origem>%{origin}</origem>
+</item>

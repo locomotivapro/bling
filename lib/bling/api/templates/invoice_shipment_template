@@ -1,0 +1,25 @@
+<transportadora>%{carrier}</transportadora>
+<cpf_cnpj>%{document}</cpf_cnpj>
+<ie_rg>%{ie_rg}</ie_rg>
+<endereco>%{full_address}</endereco>
+<cidade>%{city}</cidade>
+<uf>%{state}</uf>
+<placa>%{vehicle_plate}</placa>
+<uf_veiculo>%{vehicle_state}</uf_veiculo>
+<tipo_frete>%{shipment_type}</tipo_frete>
+<qtde_volumes>%{shipment_size}</qtde_volumes>
+<especie>%{shipment_kind}</especie>
+<numero>%{number}</numero>
+<peso_bruto>%{raw_weight}</peso_bruto>
+<peso_liquido>%{weight}</peso_liquido>
+<servico_correios>%{correios_service}</servico_correios>
+<dados_etiqueta>
+  <nome>%{shipment_label_name}</nome>
+  <endereco>%{shipment_label_address}</endereco>
+  <numero>%{shipment_label_number}</numero>
+  <complemento>%{shipment_label_additional_address}</complemento>
+  <municipio>%{shipment_label_city}</municipio>
+  <uf>%{shipment_label_state}</uf>
+  <cep>%{shipment_label_zipcode}</cep>
+  <bairro>%{shipment_label_neighborhood}</bairro>
+</dados_etiqueta>

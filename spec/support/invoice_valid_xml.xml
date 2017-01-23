@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+  <tipo>E</tipo>
+  <numero_loja>123</numero_loja>
+  <nat_operacao>Venda de Mercadorias</nat_operacao>
+  <cliente>
+    <nome>Jonh Doe</nome>
+    <tipoPessoa>F</tipoPessoa>
+    <cpf_cnpj>35165478662</cpf_cnpj>
+    <ie_rg>306153420</ie_rg>
+    <contribuinte>1</contribuinte>
+    <endereco>My great street</endereco>
+    <numero>33</numero>
+    <complemento>pt 12</complemento>
+    <bairro>Someplace</bairro>
+    <cep>03454020</cep>
+    <cidade>My city</cidade>
+    <uf>SP</uf>
+    <fone>(11) 2233-3322</fone>
+    <email>jonh@doe.com</email>
+  </cliente>
+  <transporte>
+    <transportadora>Correios</transportadora>
+    <cpf_cnpj>60120930390001</cpf_cnpj>
+    <ie_rg>306153420</ie_rg>
+    <endereco>My street, 33, apt 2</endereco>
+    <cidade>sao paulo</cidade>
+    <uf>SP</uf>
+    <placa>DMZ-0112</placa>
+    <uf_veiculo>SP</uf_veiculo>
+    <tipo_frete>D</tipo_frete>
+    <qtde_volumes></qtde_volumes>
+    <especie></especie>
+    <numero>12342</numero>
+    <peso_bruto></peso_bruto>
+    <peso_liquido></peso_liquido>
+    <servico_correios>Sedex</servico_correios>
+    <dados_etiqueta>
+      <nome></nome>
+      <endereco></endereco>
+      <numero></numero>
+      <complemento></complemento>
+      <municipio></municipio>
+      <uf></uf>
+      <cep></cep>
+      <bairro></bairro>
+    </dados_etiqueta>
+  </transporte>
+  <itens>
+    <item>
+      <codigo>001</codigo>
+      <descricao>lorem</descricao>
+      <un>pc</un>
+      <qtde>3</qtde>
+      <vlr_unit>12.30</vlr_unit>
+      <tipo></tipo>
+      <peso_bruto></peso_bruto>
+      <peso_liq></peso_liq>
+      <class_fiscal>1000.00.10</class_fiscal>
+      <origem>0</origem>
+    </item>
+    <item>
+      <codigo>002</codigo>
+      <descricao>lorem</descricao>
+      <un>pc</un>
+      <qtde>4</qtde>
+      <vlr_unit>12.30</vlr_unit>
+      <tipo></tipo>
+      <peso_bruto></peso_bruto>
+      <peso_liq></peso_liq>
+      <class_fiscal>1000.00.10</class_fiscal>
+      <origem>0</origem>
+    </item>
+  </itens>
+  <parcelas>
+    <parcela>
+      <dias>10</dias>
+      <data>28/06/2016</data>
+      <vlr>140.00</vlr>
+      <obs></obs>
+    </parcela>
+    <parcela>
+      <dias>15</dias>
+      <data>28/07/2016</data>
+      <vlr>140.00</vlr>
+      <obs></obs>
+    </parcela>
+  </parcelas>
+  <nf_produtor_rural_referenciada>
+    <numero></numero>
+    <serie></serie>
+    <ano_mes_emissao></ano_mes_emissao>
+  </nf_produtor_rural_referenciada>
+  <vlr_frete>10.00</vlr_frete>
+  <vlr_seguro>0.00</vlr_seguro>
+  <vlr_despesas>2.50</vlr_despesas>
+  <vlr_desconto>0.00</vlr_desconto>
+  <obs></obs>
+</pedido>

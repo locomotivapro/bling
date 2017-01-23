@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+  <tipo>%{type}</tipo>
+  <numero_loja>%{ecommerce_order_number}</numero_loja>
+  <nat_operacao>%{operation_type}</nat_operacao>
+  <cliente>
+    %{user}
+  </cliente>
+  <transporte>
+    %{shipment}
+  </transporte>
+  <itens>
+    %{items}
+  </itens>
+  <parcelas>
+    %{installments}
+  </parcelas>
+  <nf_produtor_rural_referenciada>
+    <numero>%{rural_reference_invoice_number}</numero>
+    <serie>%{rural_reference_invoice_sequence}</serie>
+    <ano_mes_emissao>%{rural_reference_invoice_date}</ano_mes_emissao>
+  </nf_produtor_rural_referenciada>
+  <vlr_frete>%{shipment_amount}</vlr_frete>
+  <vlr_seguro>%{ensurance_amount}</vlr_seguro>
+  <vlr_despesas>%{expenses_amount}</vlr_despesas>
+  <vlr_desconto>%{discount_amount}</vlr_desconto>
+  <obs>%{additional_info}</obs>
+</pedido>
+

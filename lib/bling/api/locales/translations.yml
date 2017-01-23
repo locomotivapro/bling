@@ -4,6 +4,8 @@ contato: user
 contatos: users
 pedido: order
 pedidos: orders
+invoices: notasfiscais
+invoice: notafiscal
 
 resultado: result
 retorno: return
@@ -42,6 +44,7 @@ cidade: city
 uf: state
 fone: phone
 email: email
+pais: country
 
 celular: cellphone
 transportadora: carrier
@@ -67,5 +70,24 @@ data: date
 vlr: amount
 obs: additional_info
 vlr_frete: shipment_amount
+vlr_despesas: expenses_amount
 vlr_desconto: discount_amount
 obs_internas: private_additional_info
+
+
+tipo: type
+nat_operacao: operation_type
+endereco_completo: full_address
+
+placa: vehicle_plate
+uf_veiculo: vehicle_state
+qtde_volumes: shipments_size
+especie: shipment_kind
+dias: days
+serie: sequence
+
+rural_reference_invoice_number: nota_rural_numero
+rural_reference_invoice_sequence: nota_rural_serie
+rural_reference_invoice_date: nota_rural_ano_mes_emissao
+
+
